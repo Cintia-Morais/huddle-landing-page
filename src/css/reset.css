@@ -1,0 +1,16 @@
+html{
+    font-size: 62.5%;
+}
+ 
+@media (max-width: 425px){
+    html{
+        font-size: 55%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}

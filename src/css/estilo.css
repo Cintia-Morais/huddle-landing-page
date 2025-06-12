@@ -1,0 +1,145 @@
+body {
+    background: url('../imagem/bg-desktop.svg') center no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+}
+
+@media (max-width: 425px) {
+  body {
+    background: url('../imagem/bg-mobile.svg') center no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+  }
+}
+
+.header img {
+    padding: 4rem 5rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center; 
+    gap: 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.conteudo-principal .imagem {
+    padding: 40px;
+    max-width: 100%;
+}
+
+.conteudo-principal .imagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 425px){
+    .conteudo-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo-principal .imagem {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .conteudo-principal .imagem img {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    max-width: 50rem;
+    gap: 2rem;
+}
+
+.descricao h1 {
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.descricao p {
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.descricao .botao {
+    align-self: flex-start;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: hsl(300, 69%, 71%);
+    padding: 20px 40px;
+    border-radius: 5rem;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -15px;
+    text-decoration: none;
+}
+
+.descricao .botao:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+@media (max-width: 425px){
+ .descricao {
+    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+ }
+
+ .descricao h1 {
+    font-size: 3rem;
+ }
+
+ .descricao p {
+  font-size: 1.7rem;
+ }
+
+ .descricao .botao {
+    align-self: center;
+ }
+}
+
+.rodape .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 40px;
+}
+
+.rodape .redes-sociais a i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+   text-align: center;
+   transition: 0.3s;
+}
+
+.rodape .redes-sociais a i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 425px){
+  .rodape .redes-sociais {
+    justify-content: center;
+    padding: 80px 40px;
+  }
+}
